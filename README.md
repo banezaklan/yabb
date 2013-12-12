@@ -25,7 +25,7 @@ Server listening on http://localhost:3000
 </pre>
 
 If you navigate to the URL, you should get a very simple bootstrap template with top menu, some content and a footer. 
-If got it, that is all it's going to do :-) 
+If you got it, that is all it's going to do :-) 
 
 Any problems should appear in the JS console of your favourite browser. 
 
