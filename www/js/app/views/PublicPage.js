@@ -3,18 +3,19 @@ define([
     'underscore',
     'backbone',
     'vm',
-    'text!templates/WelcomeTemplate.html',
-], function($, _, Backbone, Vm, WelcomeTemplate) {
+    'text!templates/PublicPageTemplate.html',
+], function($, _, Backbone, Vm, PublicPageTemplate) {
     
-    var WelcomePage = Backbone.View.extend({
+    var PublicPage = Backbone.View.extend({
         
         initialize: function() {
 
         },
         el: '.page',
         render: function() {
-            
-            this.$el.html(WelcomeTemplate);
+            console.log(PublicPageTemplate);
+            var t = _.template( PublicPageTemplate, { content:'Hello content from json' });
+            this.$el.html(t);
 
 //            var v = Vm.create( this, 'TodoItemListView', TodoItemListView, {collection: this.collection} );
 //            v.render();
@@ -24,6 +25,6 @@ define([
         
     });
 
-    return WelcomePage;    
+    return PublicPage;    
     
 });
