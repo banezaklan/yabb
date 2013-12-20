@@ -1,5 +1,6 @@
 YABB
 ====
+Sample application included
 
 Yet Another Backbone Boilerplate
 
